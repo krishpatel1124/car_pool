@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: car-pool-php
+    env: docker
+    plan: free
+    branch: main
+    repo: https://github.com/krishpatel1124/car_pool
+    autoDeploy: true
