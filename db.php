@@ -1,14 +1,12 @@
 <?php
-// Database connection settings
-$servername = "localhost";
-$username = "root"; // Default username for WAMP
-$password = "";     // Default password for WAMP (empty)
-$dbname = "ride"; // The name of the database you created
+$host = 'mysql.railway.internal';
+$user = 'root';
+$password = 'NUiXwduCqkGluQfonLfJeMWhJeYFrEkG';
+$database = 'railway';
+$port = 3306;
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($host, $user, $password, $database, $port);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
